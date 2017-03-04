@@ -1,0 +1,5 @@
+<html>
+<object data="/pdfs/portfolio.pdf" type="application/pdf" width="100%" height="100%">
+  <p>Also available <a href="/pdfs/portfolio.pdf">here</a></p>
+</object>
+</html>
