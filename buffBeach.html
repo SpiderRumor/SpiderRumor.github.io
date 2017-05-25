@@ -23,7 +23,7 @@ var nextSong= "";
 function setup(){
 	document.getElementById('audio').addListener('ended',function(){
 		i++;
-		nextSong = "Music/"+i+".wav";
+		nextSong = "jox/"+i+".wav";
 		audioPlayer = document.getElementById('audio');
 		audioPlayer.src = nextSong;
 		audioPlayer.load();
