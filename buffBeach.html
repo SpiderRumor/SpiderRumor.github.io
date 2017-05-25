@@ -17,9 +17,28 @@ video#bgvid {
     background-size: cover; 
 }
 </style>
+<script type="text/javascript">
+var i=1;
+var nextSong= "";
+function setup(){
+	document.getElementById('audio').addListener('ended',function(){
+		i++;
+		nextSong = "Music/"+i+".wav";
+		audioPlayer = document.getElementById('audio');
+		audioPlayer.src = nextSong;
+		audioPlayer.load();
+		audioPlayer.play();
+		if(i == 3){
+			i = 2;
+		}
+	}, false);
+}
+</script>
 <html>
 <video playsinline autoplay muted loop id="bgvid">
     <source src="/jox/beachMovie.webm" type="video/webm">
 </video>
-
+<body onLoad="setup();">
+<audio id="audio"  src="Music/1.mp3"controls="controls" autoplay="autoplay"   align=""> </audio>
+</body>
 </html>
