@@ -22,14 +22,14 @@ var nextSong= "";
 function setup(){
 	document.getElementById('audio').addEventListener('ended',function(){
 		i++;
+		if(i > 3){
+			i = 2;
+		}
 		nextSong = "jox/"+i+".wav";
 		audioPlayer = document.getElementById('audio');
 		audioPlayer.src = nextSong;
 		audioPlayer.load();
 		audioPlayer.play();
-		if(i > 3){
-			i = 2;
-		}
 	}, false);
 }
 </script>
