@@ -23,7 +23,7 @@ var nextSong= "";
 function setup(){
 	document.getElementById('audio').addListener('ended',function(){
 		i++;
-		nextSong = "jox/"+i+".wav";
+		nextSong = i+".wav";
 		audioPlayer = document.getElementById('audio');
 		audioPlayer.src = nextSong;
 		audioPlayer.load();
@@ -39,6 +39,6 @@ function setup(){
     <source src="/jox/beachMovie.webm" type="video/webm">
 </video>
 <body onLoad="setup();">
-<audio id="audio"  src="Music/1.mp3"controls="controls" autoplay="autoplay"   align=""> </audio>
+<audio id="audio"  src="jox/1.mp3"controls="controls" autoplay="autoplay"   align=""> </audio>
 </body>
 </html>
