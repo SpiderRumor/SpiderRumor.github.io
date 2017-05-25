@@ -30,6 +30,7 @@ function setup(){
 		audioPlayer.src = nextSong;
 		audioPlayer.load();
 		audioPlayer.play();
+		audioPlayer.removeAttribute("controls");
 	}, false);
 }
 </script>
@@ -38,6 +39,6 @@ function setup(){
     <source src="/jox/beachMovie.webm" type="video/webm">
 </video>
 <body onLoad="setup();">
-<audio id="audio"  src="jox/1.wav"controls=false autoplay="autoplay"   align=""> </audio>
+<audio id="audio"  src="jox/1.wav" autoplay="autoplay"   align=""> </audio>
 </body>
 </html>
