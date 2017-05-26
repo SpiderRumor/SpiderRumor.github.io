@@ -16,29 +16,32 @@ video#bgvid {
     background-size: cover; 
 }
 </style>
+<script src="howler.js"></script>
 <script type="text/javascript">
-var i=1;
-var nextSong= "";
-function setup(){
-	document.getElementById('audio').addEventListener('ended',function(){
-		i++;
-		if(i > 2){
-			i = 2;
-		}
-		nextSong = "jox/"+i+".wav";
-		audioPlayer = document.getElementById('audio');
-		audioPlayer.src = nextSong;
-		audioPlayer.load();
-		audioPlayer.play();
-		audioPlayer.removeAttribute("controls");
-	}, false);
-}
+	function setup(){	
+		var sloop = new Howl({
+			src: ['2.wav'],
+			loop: true,
+			sprite: {
+				main: [0, 6940, true]
+			}
+		});
+		var sound = new Howl({
+			src: ['1.wav'],
+			sprite: {
+				main: [0, 5600]
+			},
+			onend: function() {
+				sloop.play('main')
+			}
+		});
+	sound.play('main');
+	}
 </script>
 <html>
 <video playsinline autoplay muted loop id="bgvid">
-    <source src="/jox/beachMovie.webm" type="video/webm">
+    <source src="beachMovie.webm" type="video/webm">
 </video>
 <body onLoad="setup();">
-<audio id="audio"  src="jox/1.wav" autoplay="autoplay"   align=""> </audio>
 </body>
 </html>
