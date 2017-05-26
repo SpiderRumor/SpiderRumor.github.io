@@ -20,14 +20,14 @@ video#bgvid {
 <script type="text/javascript">
 	function setup(){	
 		var sloop = new Howl({
-			src: ['2.wav'],
+			src: ['/jox/2.wav'],
 			loop: true,
 			sprite: {
 				main: [0, 6940, true]
 			}
 		});
 		var sound = new Howl({
-			src: ['1.wav'],
+			src: ['/jox/1.wav'],
 			sprite: {
 				main: [0, 5600]
 			},
@@ -40,7 +40,7 @@ video#bgvid {
 </script>
 <html>
 <video playsinline autoplay muted loop id="bgvid">
-    <source src="beachMovie.webm" type="video/webm">
+    <source src="/jox/beachMovie.webm" type="video/webm">
 </video>
 <body onLoad="setup();">
 </body>
