@@ -1,0 +1,120 @@
+body {
+	overflow:hidden;
+}
+
+nav {
+	padding-left: 30px;
+	padding-top: 15px;
+}
+.imgNav {
+	z-index: -1;
+}
+.hider {
+	position:absolute;
+	top:15%;
+	left:-7%;
+	width:800px;
+	height:45px;
+	z-index:0;
+	transform:rotate(-45deg);
+	background-color:white;
+}
+.textNav {
+	z-index: 1;
+	text-align: center;
+	background:white;
+	position:absolute;
+	top:20%;
+	left:-7%;
+	width:650px;
+	height:25px;
+	transform:rotate(-45deg);
+	outline-style:solid;
+	font-size:24;
+	word-spacing:150px;
+}
+.mainContent {
+	z-index: 0;
+	position:absolute;
+	text-align:center;
+	width:80%;
+	height: auto;
+	left: 10%;
+}
+.letter {
+	color:red;
+	font-size:70;
+	margin-right:15px;
+}
+.standsFor {
+	font-size:50;
+}
+.stands {
+	display:block;
+	margin-top:3%;
+	margin-left:20%;
+	font-size:32;
+}
+.commentary {
+	display:block;
+	text-align:right;
+	padding-right:5px;
+	padding-bottom:5px;
+	margin-top:10%;
+}
+.scriptTitle {
+	width:auto;
+	border-bottom:1px solid;
+	padding:3px;
+	display:block;
+}
+.scripture {
+	z-index:2;
+	background-color:white;
+	padding: 7px;
+	outline:1px solid;
+	position:absolute;
+	width:15%;
+	left: 3%;
+	bottom:8%;
+	font-size:12;
+}
+
+.footer {
+	z-index:2;
+	padding:5px;
+	text-align:right;
+	border-top:1px solid;
+	position:absolute;
+	width:98%;
+	bottom:1%;
+}
+
+
+/* lovingly taken from https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blink */
+blink {
+    -webkit-animation: 1s linear infinite condemned_blink_effect; // for android
+    animation: 1s linear infinite condemned_blink_effect;
+}
+@-webkit-keyframes condemned_blink_effect { // for android
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@keyframes condemned_blink_effect {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
