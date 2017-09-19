@@ -11,10 +11,10 @@ nav {
 }
 .hider {
 	position:absolute;
-	top:15%;
+	top:22%;
 	left:-7%;
 	width:800px;
-	height:45px;
+	height:450px;
 	z-index:0;
 	transform:rotate(-45deg);
 	background-color:white;
