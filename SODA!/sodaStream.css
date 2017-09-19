@@ -29,9 +29,10 @@ nav {
 	width:650px;
 	height:25px;
 	transform:rotate(-45deg);
-	outline-style:solid;
 	font-size:24;
 	word-spacing:150px;
+	border-top:3px solid;
+	border-bottom:3px solid;
 }
 .mainContent {
 	z-index: 0;
