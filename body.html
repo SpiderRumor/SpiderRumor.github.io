@@ -3,7 +3,7 @@ permalink: /body
 ---
 <html>
 <header>
-	<title>"Wow what a good project" I hear</title>
+	<title>"Wow what a continuously improving project" I hear</title>
 	<style>
 	body {
 		width:100%;
@@ -14,12 +14,37 @@ permalink: /body
 		max-width:100%;
 		height:auto;
 	}
+	#nav {
+		z-index: 1;
+		margin-left:3%;
+		position:fixed;
+		transform:translate(0%,-50%);
+		top:50%;
+		border: 4px solid black;
+	}
+	#navTitle {
+		font-family:sans-serif;
+		font-style:italic;
+		font-weight:bold;
+		color:yellow;
+		display:block;
+		text-align:center;
+		background:red;
+		width:100%;
+	}
+	#content {
+		position:fixed;
+		transform:translate(-50%,-50%);
+		top:50%;
+		left:50%;
+	}
 	#over {
 		position:absolute;
-		width: 30%;
-		height:12%;
-		left:35%;
-		top:20%;
+		transform:translate(-50%,-50%);
+		width: 80%;
+		height:auto;
+		left:50%;
+		top:30%;
 		background:white;
 		border: 4px solid black;
 		padding: 5px;
@@ -29,18 +54,44 @@ permalink: /body
 		display:block;
 		text-align: center;
 	}
+	#footer {
+		z-index: 1;
+		position:fixed;
+		width:100%;
+		bottom:0%;
+		left:0%;
+		background:red;
+		font-family:sans-serif;
+		font-style:italic;
+		font-weight:bold;
+		font-variant:small-caps;
+	}
 	</style>
 </header>
 
 <body>
-	<div>
-	<img src="front.jpg">
-		<div id="over">
-			<span id="title">Check out my rockin' bod</span>
-			Welcome to my temple. Check it out. There are all sortsa places to go. There are two places to go.
-			<ul>
-				<li><a href="mouth.html">check out that gob</a></li>
-				<li><a href="butt.html">you can head on 'round back</a></li>
+	<nav>
+		<div id="nav"><span id="navTitle">BODY NAV</span><img src="bodyNav.png" usemap="#navMap">
+		<map name="navMap">
+		<area  alt="" title="" href="stomach.html" shape="rect" coords="68,141,123,213" style="outline:solid;" target="_self"     />
+		<area  alt="" title="" href="butt.html" shape="rect" coords="32,226,158,264" style="outline:solid;" target="_self"     />
+		<area  alt="" title="" href="mouth.html" shape="rect" coords="73,36,120,70" style="outline:solid;" target="_self"     />
+		</map>
+		</div>
+	</nav>
+	<div id="content">
+		<img src="front.jpg">
+			<div id="over">
+				<span id="title">Check out my rockin' bod</span>
+				Welcome to my temple. Check it out. There are all sortsa places to go. There are two places to go.
+				<ul>
+					<li><a href="mouth.html">check out that gob</a></li>
+					<li><a href="butt.html">you can head on 'round back</a></li>
 		</div>
 	</div>
+	<footer>
+		<div id="footer">
+			<marquee>body news!! it all hurts. all of the time. just joints and muscles and bones. all of it. and you'd think gettin' a good regular sleep would help. it doesn't. this is just the way it is. moanin' and creakin' about. hearing the ligaments bend and groan. i shoulda drank more milk as a kid.</marquee>
+		</div>
+	</footer>
 </body>

@@ -1,6 +1,6 @@
 <html>
 <header>
-	<title>Bite through it</title>
+	<title>I Bite Through It</title>
 	<style>
 	body {
 		width:100%;
@@ -10,6 +10,24 @@
 	img {
 		max-width:100%;
 		height:auto;
+	}
+	#nav {
+		z-index: 1;
+		margin-left:3%;
+		position:fixed;
+		transform:translate(0%,-50%);
+		top:50%;
+		border: 4px solid black;
+	}
+	#navTitle {
+		font-family:sans-serif;
+		font-style:italic;
+		font-weight:bold;
+		color:yellow;
+		display:block;
+		text-align:center;
+		background:red;
+		width:100%;
 	}
 	#over {
 		position:absolute;
@@ -26,11 +44,32 @@
 	#title {
 		display:block;
 		text-align: center;
+	}	
+	#footer {
+		z-index: 1;
+		position:fixed;
+		width:100%;
+		bottom:0%;
+		left:0%;
+		background:red;
+		font-family:sans-serif;
+		font-style:italic;
+		font-weight:bold;
+		font-variant:small-caps;
 	}
 	</style>
 </header>
 
 <body>
+	<nav>
+		<div id="nav"><span id="navTitle">BODY NAV</span><img src="bodyNav.png" usemap="#navMap">
+		<map name="navMap">
+		<area  alt="" title="" href="stomach.html" shape="rect" coords="68,141,123,213" style="outline:solid;" target="_self"     />
+		<area  alt="" title="" href="butt.html" shape="rect" coords="32,226,158,264" style="outline:solid;" target="_self"     />
+		<area  alt="" title="" href="mouth.html" shape="rect" coords="73,36,120,70" style="outline:solid;" target="_self"     />
+		</map>
+		</div>
+	</nav>
 	<div>
 	<img src="mouth.jpg">
 			<div id="over">
@@ -45,4 +84,9 @@
 				Exits are <a href="body.html">north</a> and <a href="stomach.html">south
 			</div>
 	</div>
+		<footer>
+		<div id="footer">
+			<marquee>coughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcoughcough</marquee>
+		</div>
+	</footer>
 </body>
