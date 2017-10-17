@@ -1,0 +1,41 @@
+body{
+	background-color:brown;
+}
+
+.nav {
+	position:absolute;
+	transform:translate(-50%, -50%);
+	height:64%;
+	width:13%;
+	left:26%;
+	outline:black solid 2px;
+	background-color:white;
+	margin-top:31.9%;
+
+}
+
+.logo {
+	position:absolute;
+	height:30%;
+	left:19.5%;
+	top:3.4%;
+}
+
+.header {
+
+}
+
+.content {
+	position:absolute;
+	transform:translate(-50%, -50%);
+	left:53%;
+	height:89%;
+	width:40%;
+	outline:black solid 2px;
+	background-color:white;
+	margin-top:25%;
+	margin-bottom:25%;
+	padding:.2%;
+	overflow: hidden;
+
+}

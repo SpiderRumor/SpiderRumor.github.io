@@ -1,0 +1,31 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="dirt.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>love that dirt</title>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script src="jquery.html5storage.js"></script>
+	<nav>
+		<div class="nav" id="nav"></div>
+	</nav>
+	<logo>
+		<div class="logo"><img src="logo.png" height=auto width=50%></div>
+	</logo>
+	<content>
+		<div class="container"><div class="content"><span style="postion:absolute; transform:translate(-50%-50%); left:50%;"><img src="ditch.jpg" width=100%>welcome to my home on the web!!!!! go to <a href="about.html">about!!!!</a> </div>
+	</content>
+	<script>
+		var div = document.getElementById("nav");
+		if ($.localStorage.getItem("nav")==null){
+			div.innerHTML += '<a href="dirtHome.html">Home</a><br /><a href="about.html">About</a><br />';
+			$.localStorage.setItem("nav", div.innerHTML, {path:'/'});
+		}
+		else {
+			var oldDiv = $.localStorage.getItem("nav");
+			div.innerHTML += oldDiv;			
+		}
+	</script>
+</body>
+</html>

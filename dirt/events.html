@@ -1,0 +1,36 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="dirt.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>love that dirt</title>
+</head>
+<body>
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	<script src="jquery.html5storage.js"></script>
+	<nav>
+		<div class="nav" id="nav"></div>
+	</nav>
+	<logo>
+		<div class="logo"><img src="logo.png" height=auto width=50%></div>
+	</logo>
+	<content>
+		<div class="container"><div class="content">this is the third page which has the characteristics of a second page, such as the <a href="hole.html" id="flink">hole</a> and <a href="apprentice.html">apprenticeship info.</a><iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=b8og6k9k63m1av561creuk4n2g%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> </div>
+	</content>
+		<script type="text/javascript">
+			if ($.localStorage.getItem("nav")==null){
+				$.localStorage.setItem("nav", '<a href="dirtHome.html">Home</a><br /><a href="about.html">About</a><br />', {path:'/'});
+			}
+			var oldDiv = $.localStorage.getItem("nav");
+			var div = document.getElementById("nav");
+			var str = document.getElementById("flink");
+			div.innerHTML += oldDiv;
+			var toocheck = flink.innerHTML;
+			var check = div.innerHTML.search(toocheck);
+			if (check<0) {
+				div.innerHTML += '<a href="hole.html">The Hole</a><br /><a href="policies.html">Policies</a><br />';
+				console.log(check);
+			}
+			$.localStorage.setItem("nav", div.innerHTML, {path:'/'});
+		</script>
+</body>
+</html>
