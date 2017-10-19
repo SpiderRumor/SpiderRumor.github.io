@@ -14,7 +14,7 @@
 		<div class="nav" id="nav"></div>
 	</nav>
 	<content>
-		<div class="content">At Ditch Diggers Local 357 we don't just work hard, we play hard. Here is a sampler of the upcoming events that are coming to our great organization. If you are looking for information about the  <a href="hole.html" id="flink">hole</a> please sign up for our  <a href="apprentice.html">apprenticeship program.</a><iframe src="https://calendar.google.com/calendar/embed?showNav=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=b8og6k9k63m1av561creuk4n2g%40group.calendar.google.com&amp;color=%230F4B38&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe> </div>
+		<div class="content"><span style="postion:absolute; transform:translate(-50%-50%); left:50%;"><img src="about.jpg" width=100%></a> </div>
 	</content>
 		<script type="text/javascript">
 			if ($.localStorage.getItem("nav")==null){
@@ -27,7 +27,7 @@
 			var toocheck = flink.innerHTML;
 			var check = div.innerHTML.search(toocheck);
 			if (check<0) {
-				div.innerHTML += '<a href="hole.html">The Hole</a><br /><a href="policies.html">Policies</a><br />';
+				div.innerHTML += '<a href="events.html">events</a><br /><a href="apprentice.html">apprenticeship info</a><br />';
 				console.log(check);
 			}
 			$.localStorage.setItem("nav", div.innerHTML, {path:'/'});
