@@ -14,7 +14,7 @@
 		<div class="nav" id="nav"></div>
 	</nav>
 	<content>
-		<div class="container"><div class="content"><div style="position:absolute; height:100%; width:45%; float:left;"><img src="apprentice.jpg" height:100% style="transform:translate(-50%,-50%);margin-top:100%;margin-left:50%";float:left></div><div style="display:flex;position:absolute;align-items:center;height:100%;margin-left:45%;width:55%;overflow: hidden;"><span>Our robust apprenticeship program provides a path from unenlightened to fully employed in one of the oldest and fastest growing fields in the world! Apprenticeship seminars are held every other month in the Clidesdale Mall off of I-84. Applicants to the program are expected to have working up-to-date knowledge on a <a href="shovel.html" id="flink">Shovel</a>  and our current <a href="blood.html">bloodletting practices.</a></span> </div></div>
+		<div class="container"><div class="content"><div style="position:absolute; height:100%; width:45%; float:left;"><img src="apprentice.jpg" height:100% style="transform:translate(-50%,-50%);margin-top:100%;margin-left:50%";float:left></div><div style="display:flex;position:absolute;align-items:center;height:100%;margin-left:45%;width:55%;overflow: hidden;"><span>Our robust apprenticeship program provides a path from unenlightened to fully employed in one of the oldest and fastest growing fields in the world! Apprenticeship seminars are held every other month in the Clidesdale Mall off of I-84. Applicants to the program are expected to have working up-to-date knowledge on a <a href="hole.html" id="flink">Shovel</a>  and our current <a href="blood.html">bloodletting practices.</a></span> </div></div>
 	</content>
 		<script type="text/javascript">
 			if ($.localStorage.getItem("nav")==null){
@@ -27,7 +27,7 @@
 			var toocheck = flink.innerHTML;
 			var check = div.innerHTML.search(toocheck);
 			if (check<0) {
-				div.innerHTML += '<a href="shovel.html">Shovel Width Info</a><br /><a href="blood.html">Bloodletting Practice</a><br />';
+				div.innerHTML += '<a href="hole.html">Shovel Width Info</a><br /><a href="blood.html">Bloodletting Practice</a><br />';
 				console.log(check);
 			}
 			$.localStorage.setItem("nav", div.innerHTML, {path:'/'});
