@@ -1,0 +1,32 @@
+---
+permalink: /count
+---
+<html>
+<head>
+	<title>Counter</title>
+	<link rel="stylesheet" type="text/css" href="counter.css">
+</head>
+
+<body>
+	<div class="container">
+		<div id="number">0</div>
+		<div class="controls">
+			<a href="#" onclick="add()"><div class="add">+</div></a>
+			<a href="#" onclick="sub()"><div class="sub">-</div></a>
+		</div>
+	</div>
+
+<script>
+var count;
+count = 0;
+function add() {
+	count = count + 1;
+	document.getElementById("number").innerHTML = count;
+}
+function sub() {
+	count = count - 1;
+	document.getElementById("number").innerHTML = count;
+}
+</script>
+</body>
+</html>
