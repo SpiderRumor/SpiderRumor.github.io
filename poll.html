@@ -3,8 +3,70 @@
 </head>
 
 <body>
-	<div>
-		Nathan Mierski Personality Exam
+	<style type="text/css">
+		body {
+			font-family: Helvetica;
+		}
+		div {
+			margin:4px;
+		}
+		.container {
+			position:absolute;
+			transform: translate(-50%,-50%);
+			left:50%;
+			top:30%;
+			font-size:32;
+			width:45%;
+		}
+		.description {
+			font-size:18;
+		}
+		.answers {
+			font-size:16;
+		}
+		.replyButt {
+			width:100%;
+			font-size:15;
+			position:absolute;
+			align-self:right;
+			float:right;
+		}
+		button {
+			float:right;
+			height:40;
+			width: 70;
+		}
+	</style>
+	<div class="container">
+		<div class="title">
+			Nathan Mierski Personality Exam
+		</div>
+		<div class="description">
+			Throughout the length of time man has been lost. Wondering about the true nature of themselves fruitlessly through endless "Which Character on Frasier are you?" queries and pseudo-scientific malarkey designed to give an sequence of letters or a number that could just as well describe anyone, let alone the individual. Nathan Mierski has heard your cries and has come through with an answer - THE answer. A single question that will answer all of the questions. A single piece of inquiry designed to shut out all other inquiry. <p>
+		</div>
+		<div class="question">
+			Can you self-determine?
+		</div>
+		<div class="answers">
+			<input type="radio" name="reply" value="Answer 1" id="yes">Yes<br>
+			<input type="radio" name="reply" value="Answer 2" id="no">No<br>
+		</div>
+		<div class="replyButt">
+			<button type="button" onClick="check()">Submit</button>
+		</div>
 	</div>
+	<script>
+		function check() {
+			if (document.getElementById("yes").checked == true){
+				location.href = 'pollYes.html';
+			}
+			else if (document.getElementById("no").checked == true){
+				location.href = 'pollNo.html';
+			}
+			else {
+				alert("nothing");
+			}
+		}
+	</script>
 </body>
 </html>
