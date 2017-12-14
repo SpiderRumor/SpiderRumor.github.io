@@ -1,0 +1,15 @@
+{
+	"name": "myNeighborhood",
+	"version": "0.0.1",
+	"description": "talk with yourFriends on yourTime",
+	"dependencies": {
+		"express": "^4.16.2",
+		"socket.io": "^2.0.4"
+	},
+	"engines": {
+		"node":"8.9.1"
+	},
+	"scripts": {
+		"start":"node index.js"
+	}
+}

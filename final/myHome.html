@@ -1,0 +1,163 @@
+<html>
+<head>
+	 <meta charset="UTF-8"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>]
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="ventus.css">
+	<link rel="stylesheet" type="text/css" href="myHome.css">
+</head>
+<body>
+	<div class="loader">
+		<img src="sky.png" height=auto width=100%>
+		<img src="logo.svg" height=30% width=30% id="logo">
+		<div id="prog"><marquee scrollamount=30 direction=right><div id="bar">&nbsp;</div></marquee></div>
+	</div>
+	<div class="iconWrapper">
+		<div class="icon" id="textIcon">
+			<img src="textico.png" width="30" height="30"><br />Text
+		</div>
+		<div class="icon" id="chatIcon">
+			<img src="chatico.png" width="30" height="30"><br />Chat
+		</div>
+		<div class="icon" id="buttonIcon">
+			<img src="buttonico.png" width="30" height="30"><br />Buttons
+		</div>
+		<div class="icon" id="helpIcon">
+			<img src="mineCon.jpg" width="30" height="30"><br />Minecraft
+		</div>
+	</div>
+	<div id='chat'>
+		<iframe src="https://polar-temple-14365.herokuapp.com/" width=98% height=98%></iframe>
+	</div>
+	<div id="text" class='text'>
+		<a href="#" id="textCon" draggable="false">WORDS!!</div>
+	</div>
+	<div class="buttons" id="buttons">
+		
+	</div>
+	<!-- <div id="help" class="help">
+		<div class="helpContain">
+			<div class="helpText">
+
+			</div>
+			<div class="helpImg">
+
+			</div>
+		</div>
+	</div> -->
+	<div class="help">
+		<iframe src="http://www.chezpoor.com/minesweeper/minecore.html" height=100%>
+	</iframe>
+	<script src="ventus.js"></script>
+	<script type="text/javascript">
+		var lines;
+		var randomNumber;
+		var lastRandomNumber;
+		$(document).ready(function() {
+			setTimeout(function() {
+				$('.loader').fadeOut(400, function() {
+					$('.loader').css('display','none');
+				})
+			}, 5000);
+			// setTimeout(function() {
+			// 	$('.loader').fadeout(400, function() {
+			// 		$('.loader').css('display', 'none')} , 5000
+			// )};
+			var audio = new Audio('Untitled.wav');
+			setTimeout(audio.play(), 5000);
+			var wm = new Ventus.WindowManager();
+			var chatWin = wm.createWindow.fromQuery('#chat',{
+				title: 'Chat',
+				x: 50,
+				y: 50,
+				width: 500,
+				height: 400
+			});
+			var textWin = wm.createWindow.fromQuery('.text', {
+				title: 'text',
+				x: 60,
+				y: 60,
+				width: 500,
+				height: 500,
+				events: {
+					move: function(x, y) {
+						console.log(x + " " + y);
+					},
+				}
+			});
+			var buttonWin = wm.createWindow.fromQuery('.buttons', {
+				title: 'button',
+				x: 70,
+				y: 70,
+				width: 500,
+				height: 400,
+				events: {
+				}
+			});
+			var chat2Win = wm.createWindow.fromQuery('#chat2', {
+				title: 'chat2',
+				x: 80,
+				y: 80,
+				width: 500,
+				height: 400,
+				events: {
+					},
+			});
+			var helpWin = wm.createWindow.fromQuery('.help', {
+				title: 'help',
+				x: 90,
+				y: 90,
+				width: 300,
+				height: 400
+			});
+			$( "#textIcon" ).dblclick(function() {
+				textWin.open();
+				var words = ['fruit', 'paper', 'time', 'breathe', 'piss', 'bottle', 'home'];
+				var newWord = words[Math.floor(Math.random()*words.length)];
+				var bgColors = ['pink', 'red', 'indigo', 'wheat', 'aqua', 'mauve'];
+				var newbgColor = bgColors[Math.floor(Math.random()*bgColors.length)];
+				var textColors = ['black', 'white', 'yellow', 'teal', 'purple', 'brown'];
+				var newTextColor = textColors[Math.floor(Math.random()*textColors.length)];
+				$("#text").css('background-color', newbgColor);
+				$("#textCon").css('color', newTextColor);
+				$("#textCon").html(newWord);
+				return false;
+			});
+			$( "#chatIcon" ).dblclick(function() {
+				chatWin.open();
+			});
+			$( "#buttonIcon" ).dblclick(function() {
+				buttonWin.open();
+			});
+			$("#chat2icon").dblclick(function() {
+				chat2Win.open();
+			});
+			var buttonsWide = $(".buttons").width() / 10 ;
+			for (i = 0; i < buttonsWide*100; i++) {
+				// console.log($(".buttons").width());
+				$(".buttons").append("<button><label><u>C</u>lick!</label></button>");
+			};
+			$("#helpIcon").dblclick(function() {
+				helpWin.open();
+			});
+		});
+		$( "#textCon" ).click(function() {
+			var words = ['fruit', 'paper', 'time', 'breathe', 'piss', 'bottle', 'home'];
+			var newWord = words[Math.floor(Math.random()*words.length)];
+			var bgColors = ['pink', 'red', 'indigo', 'wehat', 'aqua', 'mauve'];
+			var newbgColor = bgColors[Math.floor(Math.random()*bgColors.length)];
+			var textColors = ['black', 'white', 'yellow', 'teal', 'purple', 'brown'];
+			var newTextColor = textColors[Math.floor(Math.random()*textColors.length)];
+			$("#text").css('background-color', newbgColor);
+			$("#textCon").css('color', newTextColor);
+			$("#textCon").html(newWord);
+			return false;
+		});
+		$( function() {
+		  $( ".icon" ).draggable();
+		  $(".iconWrapper").selectable();
+		} );
+	</script>
+</body>
+</html>

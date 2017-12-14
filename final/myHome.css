@@ -1,0 +1,128 @@
+body {
+	background-color: teal;
+	overflow: hidden;
+	font-family: "MS Sans-serif", Sans-serif
+}
+
+button {
+	height:30px;
+	width: 90px;
+	margin: 2px;
+	border-top:1px solid black;
+	border-left:1px solid black;
+	border-right:1px solid white;
+	border-bottom:1px solid white;
+
+}
+
+button:active{
+	border-top:1px solid white;
+	border-left:1px solid white;
+	border-right:1px solid black;
+	border-bottom: 1px solid black;
+}
+
+
+#text {
+	position: absolute;
+	background-color: red;
+	text-decoration-color: blue;
+	text-align: center;
+	height:100%;
+	width:100%;
+}
+
+#textCon {
+	transform:translate(-50%,-50%);
+	position:absolute;
+	left:50%;
+	top:45%;
+	font-size:95;
+	color:blue;
+	text-decoration: underline;
+	font-style:italic;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+.chatWin {
+	position:absolute;
+	border: 3px solid black;
+	width:100%;
+	height:100%;
+}
+
+#buttons {
+	position:relative;
+	display:block-inline;
+	width:100%;
+	height:100%;
+	margin:0;
+	overflow:hidden;
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+
+.icon {
+	position:static;
+	text-align: center;
+	top:3%;
+	left:3%;
+	z-index:2;
+}
+
+.iconWrapper {
+	position:absolute;
+	top:3%;
+	left: 2%;
+}
+
+.icon .ui-selecting {
+
+}
+
+.icon .ui-selected {
+	filter:blur(60%);
+}
+
+
+
+#logo {
+	position:absolute;
+	transform:translate(-100%,-100%);
+	top:100%;
+	left:97%;
+}
+
+.loader {
+	display:inline;
+	position:absolute;
+	z-index: 100;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:white;
+}
+
+#prog {
+	transform:translate(0%,-100%);
+	position:fixed;
+	width: 110%;
+	height:7%;
+	left:-10px;
+	top:105%;
+	margin:0px;
+
+}
+
+#bar {
+	background-color: blue;
+	height:105%;
+	width:500px;
+
+}
