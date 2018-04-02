@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>SA//GA</title>
+</head>
+
+<script type="text/javascript">
+function playSound(el,soundfile) {
+    if (el.mp3) {
+        if(el.mp3.paused) el.mp3.play();
+        } else {
+            el.mp3 = new Audio(soundfile);
+            el.mp3.play();
+            }
+        }
+function switchPanels(){
+	var x = document.getElementById("chapBox");
+	if (x.style.display == "none") {
+		document.getElementById("chapBox").style.display = "block";
+		document.getElementById("wordBox").style.display = "none";
+	} else {
+		document.getElementById("wordBox").style.display = "block";
+		document.getElementById("chapBox").style.display = "none";
+	}
+}
+</script>
+
+<body>
+	<div class="container">
+		<div id="chapBox" style="display:block;">
+			<div class="chap" id="chap1">Chapter 1 - Swept Away<span id="play" onclick="playSound(this, 'test.mp3');">&#9654;</span></div>
+			<div class="chap" id="chap2">Chapter 2 - The Ignatius  //  Chapter 3 - The Estranged Existentialist<span id="play" onclick="playSound(this, 'test.mp3');">&#9654;</span></div>
+			<div class="chap" id="chap3">Chapter 4 - Honor and Order  //  Chapter 5 - The Orator and The Oracle<span id="play" onclick="playSound(this, 'test.mp3');">&#9654;</span></div>
+			<div class="chap" id="chap4">Chapter 6 - Vertigo  //  Chapter 7 - The Whimsical Whirlwind<span id="play" onclick="playSound(this, 'test.mp3');">&#9654;</span></div>
+			<div class="chap" id="chap5">Chapter 8 - The Inevitable<span id="play" onclick="playSound(this, 'test.mp3');">&#9654;</span></div>
+			<div class="chap" id="chap6">Chapter 9 - Great Escape  //  Chapter 10 - Awaken<span id="play" onclick="playSound(this, 'test.mp3');">&#9654;</span></div>
+		</div>
+		<div id="wordBox" style="display:none;">
+			<div class="word" id="word1">Eulogy for Elijah Everett<span id="play">&#9654;</span></div>
+			<div class="word" id="word2">The Wake and Waking Misery<span id="play">&#9654;</span></div>
+			<div class="word" id="word3">Estrangement  //  Existential Stupor<span id="play">&#9654;</span></div>
+			<div class="word" id="word4">Montgomery Montague  //  Pheobe and Scott<span id="play">&#9654;</span></div>
+			<div class="word" id="word5">The Last Good Night<span id="play">&#9654;</span></div>
+			<div class="word" id="word6">Nostos<span id="play">&#9654;</span></div>
+		</div>
+		<div class="passBox">
+			<div id="passTitle">Enter Code</div>
+			<input id="passwordBox" type="text" name="pass" class="input" placeholder="*** ***"></div>
+		</div>
+		<div class="weirdArrow">
+			<img onclick="switchPanels()" src="arrow.png">
+		</div>
+		<div class="water">
+			SA // GA
+		</div>
+	</div>
