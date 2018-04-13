@@ -9,6 +9,7 @@
 <body>
 	<div class="container">
 		<div id="chapBox" style="display:block;">
+			<!-- change 'test.mp3' to whatever the actual mp3 is gonna be. --> 
 			<div class="chap" id="chap1" style="display:none">Chapter 1 - Swept Away<span id="play" onclick="playSound(this, 'test.mp3');">&#9654;</span></div>
 			<div class="chap" id="chap2" style="display:none">Chapter 2 - The Ignatius  //  Chapter 3 - The Estranged Existentialist<span id="play" onclick="playSound(this, 'test.mp3');">&#9654;</span></div>
 			<div class="chap" id="chap3" style="display:none">Chapter 4 - Honor and Order  //  Chapter 5 - The Orator and The Oracle<span id="play" onclick="playSound(this, 'test.mp3');">&#9654;</span></div>
@@ -67,6 +68,7 @@ document.getElementById("passwordBox").addEventListener("keyup", function(event)
         document.getElementById("passwordBox").value = "";
     }
 });
+//chap# is the thing you should change to whatever your password is going to be for that respective chapter
 function passCheck(password) {
 	switch (password) {
 		case 'chap1':

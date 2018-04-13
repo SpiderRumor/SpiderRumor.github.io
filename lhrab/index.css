@@ -88,6 +88,7 @@ input {
 }
 
 .weirdArrow {
+	cursor: pointer;
 	position: fixed;
 	top:50%;
 	right:2%;
