@@ -18,7 +18,7 @@ let zones = {
 	"-2": "Most of Greenland",
 	"-1": "Cabo Verde",
 	"0": "Iceland",
-	"1": "London",
+	"1": "London	 Poland",
 	"2": "Brussels",
 	"3": "Moscow",
 	"4": "Dubai",
