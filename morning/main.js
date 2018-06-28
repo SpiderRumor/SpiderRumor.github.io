@@ -53,7 +53,7 @@ for (i = 0; i < nightZones.length; i++){
 	nightPage.append(nightNames[i]);
 	nightPage.innerHTML += '&emsp;';
 };
-if (userTime.getHours() > 11 || userTime.getHours() < 5) {
+if (userTime.getHours() >= 11 || userTime.getHours() < 5) {
 	document.getElementById("morn").style.display = "none";
 	document.getElementById("night").style.display = "block";
 	document.body.style["background-color"] = "#360675";
