@@ -1,3 +1,6 @@
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
+
 function filter(name) {
 	var hiddenTerm = name;
 	var sections = document.getElementsByClassName(hiddenTerm);
