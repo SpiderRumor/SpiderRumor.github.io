@@ -4,16 +4,23 @@
         body {
             overflow:hidden;
             white-space: nowrap;
+            background-color:black;
+            color:white;
         }
         a { 
             color: inherit;
             text-decoration: inherit;
         } 
+        .container {
+            position:absolute;
+            transform:translate(-50%,-50%);
+            left:50%;
+            top:50%;
+        }
+
         .nameblock {
             z-index: -1;
-            position: absolute;
-            transform: translate(-50%,-50%);
-            top: 50%; left: 50%;
+            position: relative;
             background-color: black;
             color:white;
             font-family: 'Times New Roman';
@@ -25,9 +32,7 @@
         }
        
         .navblock {
-            position: absolute;
-            top: 57%; left: 50%;
-            transform: translate(-50%, -15%);
+            position: relative;
         }
         .aboutbutt, .workbutt {
             line-height: 36px;
@@ -49,7 +54,7 @@
         }
         .middlenobutt {
             display: inline-block;
-            width: 100%;
+            width: 260px;
             height: 36px;
             background-color: black;
             margin-right:-5px;
@@ -57,14 +62,16 @@
         }
     </style>
     <body>
+        <div class="container">
             <div class="nameblock">
-                <marquee scrollamount="40">NATHAN MIERSKI</marquee>
+                NATHAN <br />
+                MIERSKI
             </div>
             <div class="navblock">
                 <a href=/about><div class="aboutbutt">about</div></a>
                 <div class="middlenobutt"></div>
                 <a href=/work><div class="workbutt">work</div></a>
             </div>
+        </div>
     </body>
-    shhhhhh
 </html>
