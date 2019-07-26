@@ -20,7 +20,8 @@ ul {
 }
 
 #logo {
-	width:13%;
+	width:100%;
+	height:auto;
 }
 
 .year{
