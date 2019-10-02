@@ -1,0 +1,98 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Source+Sans+Pro&display=swap" rel="stylesheet">  
+</head>
+<script src="https://cdn.jsdelivr.net/npm/ejs@2.6.1/ejs.min.js"></script>
+
+<body>
+	<div id="titleBar"><div id="title"><div id="parallelogram"></div><div id="parallelogram"></div><div id="parallelogram"></div><img src="parallel.png">     3 PARALLELOGRAMS</div></div>
+	<div id="container">
+		<div id="1" class="header">
+			<div class="posHead">Position</div><div class="nameHead">Name</div><div class="scoreHead">Score</div><div class="posChangeHead">Change</div>
+		</div>
+		<div id="1" class="entry">
+			<div class="pos">1</div><div class="name"></div><div class="score"></div><div class="posChange"></div>
+		</div>
+		<div id="2" class="entry">
+			<div class="pos" >2</div><div class="name"></div><div class="score"></div><div class="posChange up"></div>
+		</div>
+		<div id="3" class="entry">
+			<div class="pos">3</div><div class="name"></div><div class="score"></div><div class="posChange down"></div>
+		</div>
+		<div id="4" class="entry">
+			<div class="pos">4</div><div class="name"></div><div class="score"></div><div class="posChange"></div></div>
+		<div id="5" class="entry">
+			<div class="pos">5</div><div class="name"></div><div class="score"></div><div class="posChange up"></div></div>
+		<div id="6" class="entry">
+			<div class="pos">6</div><div class="name"></div><div class="score"></div><div class="posChange up"></div>
+		</div>
+		<div id="7" class="entry">
+			<div class="pos">7</div><div class="name"></div><div class="score"></div><div class="posChange up"></div>
+		</div>
+		<div id="8" class="entry">
+			<div class="pos">8</div><div class="name"></div><div class="score"></div><div class="posChange down"></div>
+		</div>
+		<div id="9" class="entry">
+			<div class="pos">9</div><div class="name"></div><div class="score"></div><div class="posChange up"></div>
+		</div>
+		<div id="10" class="entry">
+			<div class="pos">10</div><div class="name"></div><div class="score"></div><div class="posChange"></div>
+		</div>
+		<div id="11" class="entry">
+			<div class="pos">11</div><div class="name"></div><div class="score"></div><div class="posChange up"></div></div>
+		<div id="12" class="entry">
+			<div class="pos">12</div><div class="name"></div><div class="score"></div><div class="posChange down"></div>
+		</div>
+		<div id="13" class="entry">
+			<div class="pos">13</div><div class="name"></div><div class="score"></div><div class="posChange down"></div></div>
+		<div id="14" class="entry">
+			<div class="pos">14</div><div class="name"></div><div class="score"></div><div class="posChange down"></div>
+		</div>
+		<div id="15" class="entry">
+			<div class="pos">15</div><div class="name"></div><div class="score"></div><div class="posChange"></div></div>
+		<div id="16" class="entry">
+			<div class="pos">16</div><div class="name"></div><div class="score"></div><div class="posChange"></div>
+		</div>
+		<div id="17" class="entry">
+			<div class="pos">17</div><div class="name"></div><div class="score"></div><div class="posChange"></div>
+		</div>
+		<div id="18" class="entry">
+			<div class="pos">18</div><div class="name"></div><div class="score"></div><div class="posChange"></div>
+		</div>
+		<div id="19" class="entry">
+			<div class="pos">19</div><div class="name"></div><div class="score"></div><div class="posChange"></div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var nameList = document.getElementsByClassName("name");
+	var scoreList = document.getElementsByClassName("score");
+	var posChangeList = document.getElementsByClassName("posChange");
+	var sales = [[ 'Jeff D.', 2686, 2458, 1, 0 ],
+  [ 'Dave F.', 1005, 731, 3, 1 ],
+  [ 'Mike V.', 984, 775, 2, -1 ],
+  [ 'Dave W.', 965, 514, 4, 0 ],
+  [ 'Truitt M.', 904, 459, 8, 3 ],
+  [ 'Mark W.', 781, 461, 7, 1 ],
+  [ 'Paul B.', 751, 455, 9, 2 ],
+  [ 'Steve T.', 640, 490, 5, -3 ],
+  [ 'Patrick Z.', 627, 364, 14, 5 ],
+  [ 'Tyler L.', 600, 434, 10, 0 ],
+  [ 'Mike A.', 600, 390, 13, 2 ],
+  [ 'Erik L.', 590, 411, 11, -1 ],
+  [ 'Nick T.', 567, 465, 6, -7 ],
+  [ 'Devin M.', 556, 399, 12, -2 ],
+  [ 'Denis S.', 465, 265, 15, 0 ],
+  [ 'Marco S.', 405, 251, 16, 0 ],
+  [ 'Victor B.', 229, 191, 17, 0 ],
+  [ 'Glenn W.', 0, 0, 18, 0 ],
+  [ 'Kevin L.', 0, 0, 19, 0 ]];
+  console.log(nameList);
+	for(var i=0; i<19;i++){
+			nameList[i].innerHTML = sales[i][0];
+			scoreList[i].innerHTML = sales[i][1];
+			posChangeList[i].innerHTML = sales[i][4];
+	};
+</script>
+</html>
