@@ -1,0 +1,46 @@
+.container {
+	font-family: 'Lora', serif;
+	position: relative;
+	transform:translate(-50%,-50%);
+	top:50%;
+	left:50%;
+	width: 90%;
+	height: 90%;
+	border: 20px solid #d84c4c;
+}
+
+.kharms {
+	font-size:20;
+	position: absolute;
+	transform:translate(-50%,-50%);
+	left:50%;
+	top:50%;
+	padding:9px;
+}
+.stanza {
+	padding-bottom:5%;
+}
+img {
+	position:relative;
+	z-index: 0;
+	width: 40%;
+}
+
+.line {
+	position:relative;
+	z-index: 1;
+	width:100%;
+	display:block;
+}
+
+#attribution {
+	font-size:24;
+	font-style:italic;
+	color:lightgray;
+	white-space: nowrap;
+	position: absolute;
+	transform:translate(-100%, -100%);
+	left:99%;
+	top:100%;
+	padding:2px;
+}

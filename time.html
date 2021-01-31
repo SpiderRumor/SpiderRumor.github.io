@@ -1,0 +1,34 @@
+<html>
+<head>
+	<title>Time</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet"> 
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="time.css">
+	<div class="container">
+		<div class="kharms">
+		<div class="stanza">
+		<span class="line">I have been thinking about time</span>
+		<span class="line">and worrying about my work seeming dated</span>
+		<span class="line">I had a really nice time with you this evening and hope to see you again</span>
+		</div>
+		<div class="stanza">
+		<span class="line">I have been thinking about time</span>
+		<span class="line">and worrying about my work seeming dated</span>
+		<span class="line" id="time"></span>
+		</div>
+		<div class="stanza">
+		<span class="line">I have been thinking about time</span>
+		<span class="line">and worrying about my work seeming dated</span>
+		<span class="line" id="photo"><img src="dateImg.png" alt="A black and white illustration of a Date (fruit)"></span>
+		</div>
+		</div>
+		<span id="attribution">thanks evelyn</span>
+	</div>
+</body>
+<script>
+	let time = new Date();
+	document.getElementById("time").innerHTML = time;
+</script>
+</html>
