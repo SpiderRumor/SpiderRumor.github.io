@@ -6,7 +6,7 @@ var nightNames = [];
 var morningNames = [];
 let zones = {
 	"-12": "Us Minor Outlying Islands",
-	"-11": "American Somoa",
+	"-11": "American Samoa",
 	"-10": "Hawaii",
 	"-9": "West Alaska",
 	"-8": "Anchorage",
