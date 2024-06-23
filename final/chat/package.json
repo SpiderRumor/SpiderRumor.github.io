@@ -4,7 +4,7 @@
 	"description": "talk with yourFriends on yourTime",
 	"dependencies": {
 		"express": "^4.17.3",
-		"socket.io": "^2.0.4"
+		"socket.io": "^2.5.0"
 	},
 	"engines": {
 		"node":"8.9.1"
