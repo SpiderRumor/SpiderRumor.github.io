@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"description": "talk with yourFriends on yourTime",
 	"dependencies": {
-		"express": "^4.17.3",
+		"express": "^4.19.2",
 		"socket.io": "^2.0.4"
 	},
 	"engines": {
